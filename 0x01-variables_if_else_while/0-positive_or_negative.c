@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
 * main - print a random number
 *Return: 0
@@ -11,12 +12,18 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	if (n > 0)
+	{
 		printf("%d is positive\n", n);
-	if else(n < 0)
-		printf("%d is negetive\n", n);
-	else{
+	}
+	else if (n == 8)
+	{
 		printf("%d is zero\n", n);
-		}
-	return (0);
+	}
+	else
+	{
+		printf("%d is negetive\n", n);
+	}
+	Return (0);
 }
