@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main - Print alphabets in lower case and then uppercase
+* main - print a random number
 *Return: 0
 */
 
@@ -13,18 +13,12 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 		c++;
 	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-
 	putchar('\n');
 	return (0);
 }
