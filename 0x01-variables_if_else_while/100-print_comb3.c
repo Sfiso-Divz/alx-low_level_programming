@@ -20,4 +20,19 @@ int main(void)
 		{
 			if (d != c && d < c)
 			{
-				putchar
+				putchar();
+				putchar();
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++
+		}
+		d++
+	}
+	putchar('\n');
+	return (0);
+}
