@@ -1,9 +1,7 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 /**
-* main - Write a program that prints all possible different combinations of two digits.
+* main - Program that prints all possible different combinations of two digits.
 *Return: 0
 */
 
@@ -20,4 +18,19 @@ int main(void)
 		{
 			if (d != c && d < c)
 			{
-				putchar
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c++;
+		}
+		d++;
+	}
+	putchar('\n');
+	return (0);
+}
